@@ -6,7 +6,7 @@ import os
 from faker import Faker
 
 
-NUMBER_OF_CARDS = 3
+NUMBER_OF_CARDS = 10
 TEMPLATE_PATH = 'src/charsheet.svg'
 OUTPUT_PATH = 'output/svg/result.svg'
 SKILLS = [
