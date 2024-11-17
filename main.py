@@ -78,8 +78,10 @@ def main():
         'skill_3': modifed_random_skills[2]
     }
 
-    context['first_name'] = fake.first_name_female() if random_gender==0 else fake.first_name_male()
-    context['last_name'] = fake.last_name_female() if random_gender==0 else fake.last_name_male()
+    context['first_name'] = fake.first_name_female() if random_gender==0 \
+        else fake.first_name_male()
+    context['last_name'] = fake.last_name_female() if random_gender==0 \
+        else fake.last_name_male()
 
     output_folder = OUTPUT_PATH.rsplit('/', 1)[0]
     if not os.path.exists(output_folder):
